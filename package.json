@@ -1,0 +1,17 @@
+{
+  "name": "eat",
+  "version": "1.0.0",
+  "description": "eat",
+  "main": "index.html",
+  "scripts": {
+    "test": "MyTest"
+  },
+  "keywords": [
+    "eat"
+  ],
+  "author": "doge",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>What to eat</title>
+
+  <!-- bootstrap and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <!-- my css and javascript -->
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+  <script>
+  $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+  });
+  </script>
+</head>
+
+<body data-spy="scroll" data-target="#navbar">
+
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+        <div class="centering">
+          <button onclick="getLunchMenu()">What to eat for lunch?</button>
+        </div>
+        <br>
+        <br>
+        <div id="lunch" class="centering">
+
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+        <div class="centering">
+          <button onclick="getDinnerMenu()">What to eat for dinner?</button>
+        </div>
+        <br>
+        <br>
+        <div id="dinner" class="centering">
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
